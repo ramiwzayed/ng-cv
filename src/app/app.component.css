@@ -1,0 +1,20 @@
+header{
+  background-color: lightyellow;
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+h1,h2,h3{
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background-color: gray;
+}
+.contacts{
+  background-color:#404040;
+  color: white;
+}
+ul{
+  color: black;
+}
+
