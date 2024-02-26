@@ -3,7 +3,7 @@ header {
   text-align: center;
   font-size: 20px;
   font-family: monospace;
-  text-transform: revert;
+  text-transform: lowercase;
   gap: 10px;
   width: fit-content;
   margin: 0;
