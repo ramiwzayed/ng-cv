@@ -53,3 +53,13 @@ hr {
   height: 4px;
   background: linear-gradient(to right, black 75%, gray 25%);
 }
+
+.right-section {
+  float: right;
+  width: 75%;
+}
+
+.left-section {
+  float: left;
+  width: 25%;
+}
