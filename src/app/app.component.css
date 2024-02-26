@@ -1,20 +1,55 @@
-header{
+header {
   background-color: lightyellow;
   text-align: center;
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: monospace;
+  text-transform: revert;
+  gap: 10px;
+  width: fit-content;
+  margin: 0;
 }
-h1,h2,h3{
+
+h1, h2, h3 {
   font-family: sans-serif;
   font-size: 20px;
   text-align: center;
   background-color: gray;
 }
-.contacts{
-  background-color:#404040;
+
+.contacts {
+  background-color: #404040;
   color: white;
 }
-ul{
+
+ul {
   color: black;
 }
 
+p {
+  width: fit-content;
+  margin: 0;
+}
+
+p {
+
+
+}
+
+hr {
+  margin: 0;
+  width: fit-content(5px);
+  white-space: nowrap;
+}
+
+/*.two-colored-line {*/
+/*  width: 50%;*/
+/*  background-color: red;*/
+
+/*}*/
+.two-colored-line::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 4px;
+  background: linear-gradient(to right, black 75%, gray 25%);
+}
