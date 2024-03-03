@@ -5,17 +5,23 @@ header {
   font-family: monospace;
   text-transform: uppercase;
   gap: 10px;
-  width: fit-content;
+  width: 2000px;
+  height: 150px;
   margin: 0;
 }
 
-h1, h2, h3 {
+h1 {
+  background-color: #404040;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+h2, h3 {
   font-family: sans-serif;
   font-size: 20px;
   text-align: center;
-  background-color: gray;
+  background-color: white;
 }
-
 
 .contacts {
   background-color: #404040;
@@ -32,11 +38,6 @@ p {
   margin: 0;
 }
 
-p {
-
-
-}
-
 hr {
   margin: 0;
   width: fit-content(5px);
@@ -49,11 +50,13 @@ hr {
 
 /*}*/
 .two-colored-line::after {
-  content: "";
-  display: block;
+  content: "";,
+display: block;
   width: 10%;
   height: 4px;
   background: linear-gradient(to right, black 75%, gray 25%);
+  display: inline-block;
+
 }
 
 .yellow-square {
