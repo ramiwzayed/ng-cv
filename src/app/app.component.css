@@ -1,36 +1,41 @@
 header {
+  margin-top: 100px;
   background-color: yellow;
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   font-family: monospace;
   text-transform: uppercase;
   gap: 10px;
   width: 2000px;
   height: 150px;
-  margin: 0;
+  margin: 20px;
 }
 
 h1 {
   background-color: #404040;
   font-size: 20px;
   font-family: sans-serif;
+  width: fit-content;
 }
 
 h2, h3 {
   font-family: sans-serif;
+  width: fit-content;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   background-color: white;
 }
 
 .contacts {
   background-color: #404040;
   color: white;
-
+  list-style: none;
+  width: fit-content;
 }
 
 ul {
   color: black;
+  width: fit-content;
 }
 
 p {
@@ -38,46 +43,26 @@ p {
   margin: 0;
 }
 
-hr {
-  margin: 0;
-  width: fit-content(5px);
-  white-space: nowrap;
-}
 
 /*.two-colored-line {*/
 /*  width: 50%;*/
 /*  background-color: red;*/
 
 /*}*/
-.two-colored-line::after {
-  content: "";,
-display: block;
-  width: 10%;
-  height: 4px;
-  background: linear-gradient(to right, black 75%, gray 25%);
-  display: inline-block;
 
-}
-
-.yellow-square {
-  width: 10%;
-  height: 5px;
-  background-color: yellow;
-  display: block;
-}
 
 .right-section {
   float: right;
   width: 75%;
 }
 
-.space {
-  margin: 20px;
-  word-spacing: 100px;
-}
 
 .left-section {
   float: left;
-  width: 25%;
+  width: fit-content(250px);
   background-color: #404040;
+}
+
+p {
+  margin: 10px;
 }

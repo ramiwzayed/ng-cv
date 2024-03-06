@@ -3,7 +3,7 @@
   <ul class="contacts">
 
     <h1>EDUCATION</h1>
-    <hr>
+    <hr color="yellow">
     <p>ENTER YOUR MAJOR</p>
     <p>Name of your university</p>
     <p>2005-2009</p>
@@ -13,78 +13,59 @@
 
 
     <h1>REFERENCE</h1>
-    <hr>
-    <!--    background: yellow;-->
-    <!--    height: 3px;-->
-    <!--    border: none;-->
-    <li><p>Phone:</p>+972597876633
-    </li>
+    <hr color="yellow">
+
     <div class="yellow-square"></div>
-    <p>Email:</p> ramiwzayed
-
+    <li><p>Phone:</p>+972597876633</li>
+    <p>Email:</p> ur email
     <li><p>website:</p>urwebsite.com</li>
-
     <li><p>address:</p> Ramallah/PS</li>
   </ul>
 </div>
 <div class="right-section">
-  <header>
+  <header style="margin-top: 100px">
     <p><b>K</b>aren RICHARDS</p>
     <p>PROFESSIONAL TITLE</p>
   </header>
-
-
   <h2>About me</h2>
   <hr>
   <p>Lorem Ipsum dolor sit amet , consectetur adipiscing elit,sed do euusmod empor incididunt ut labore et dolore magna
     alique.</p>
-
   <h2>Work Experience</h2>
   <hr>
   <ul>
     <li>
-      <p style="line-height: 1;">2012-2014
-        <strong>Job Postion here</strong></p>
-      <p><strong>Company Name/California USA</strong></p>
+      <p class="work">2012-2014</p>
+      <p><strong>Job Postion here</strong></p>
+      <p><strong>Company/Name/California USA</strong></p>
       <p>lorem Ipsum dolor sit amet , consectetur adipiscing elit,sed do euusmod empor incididunt ut labore et dolore
         magna</p>
     </li>
     <li>
-      <p style="line-height: 1;">2014-2017
-        <strong>Job Postion here</strong></p>
-      <p><strong>Company Name/California USA</strong></p>
+      <p class="work">2014-2017</p>
+      <p><strong>Job Postion here</strong></p>
+      <p><strong>Company/Name/California USA</strong></p>
       <p>lorem Ipsum dolor sit amet , consectetur adipiscing elit,sed do euusmod empor incididunt ut labore et dolore
         magna</p></li>
-    <li><p style="line-height: 1;">2017-Present
-      <strong>Job Postion here</strong></p>
-      <p><strong>Company Name/California USA</strong></p>
+    <li><p class="work">2017-Present</p>
+      <p><strong>Job Postion here</strong></p>
+      <p><strong>Company/Name/California USA</strong></p>
       <p>lorem Ipsum dolor sit amet , consectetur adipiscing elit,sed do euusmod empor incididunt ut labore et dolore
         magna</p>
     </li>
   </ul>
-
-
+  <!--<h2>Work Experience</h2>-->
+  <!--<hr>-->
+  <!--  <div style="display: flex">-->
+  <!--    @for(work of allWorks; track work){-->
+  <!--      <app-works [work]="work"></app-works>-->
+  <!--    }-->
+  <!--  </div>-->
   <h3>Software Skill</h3>
-
   <hr>
-
-  <div class="two-colored-line">
-    <p>Adobe photoshop Microsoft Word</p>
+  <div style="display: flex">
+    @for (skill of allSkills; track skill) {
+      <app-skill [skill]="skill"
+                 style="width: 100%"></app-skill>
+    }
   </div>
-
-
-  <div class="two-colored-line">
-    <p>Adobe Illustator Microsoft PowerPoint</p>
-  </div>
-  <div class="two-colored-line">
-    <p>Adobe Indesign HTML-5/CSS-3</p>
-  </div>
-</div>
-
-
-
-
-
-
-
-
