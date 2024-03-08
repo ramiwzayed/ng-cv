@@ -62,12 +62,3 @@ export class AppComponent {
   ]
   aboutMeText: string = "Lorem Ipsum dolor sit amet , consectetur adipiscing elit,sed do euusmod empor incididunt ut labore et dolore magna alique";
 }
-
-// phone: string,
-//   email: string,
-//   website: string,
-//   address: string
-// phone: "enter your phone number",
-//   email: "email",
-//   website: "website",
-//   address: "address"
