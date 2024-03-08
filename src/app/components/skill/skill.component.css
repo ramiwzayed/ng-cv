@@ -1,11 +1,11 @@
 .two-colored-line::after {
-  content: "";,
-display: block;
-  width: 100%;
+  content: "";
+  width: 25%;
   height: 4px;
   flex-wrap: wrap;
   background: linear-gradient(to right, black 75%, gray 25%);
   /*display: inline-block;*/
   display: flex;
-
 }
+
+

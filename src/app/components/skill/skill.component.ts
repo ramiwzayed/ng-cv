@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, input, Input} from '@angular/core';
 
 @Component({
   selector: 'app-skill',
@@ -11,3 +11,5 @@ export class SkillComponent {
   @Input({required: true}) skill!: string;
 
 }
+
+
