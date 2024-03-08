@@ -1,41 +1,12 @@
 header {
-  /*margin-top: 100px;*/
   background-color: yellow;
   text-align: left;
   font-size: 20px;
   font-family: monospace;
   text-transform: uppercase;
-  gap: 10px;
-  width: 2000px;
-  height: 150px;
-  /*margin: 20px;*/
-}
-
-h1 {
-  background-color: #404040;
-  font-size: 20px;
-  font-family: sans-serif;
-  width: fit-content;
-}
-
-h2, h3 {
-  font-family: sans-serif;
-  width: fit-content;
-  font-size: 20px;
-  text-align: left;
-  background-color: white;
-}
-
-
-ul {
-  color: black;
-  width: fit-content;
-  list-style: none;
-}
-
-p {
-  width: fit-content;
-  margin: 0;
+  width: 750px;
+  /*gap: 10px;*/
+  /*width: 2000px;*/
 }
 
 .right-section {
@@ -46,11 +17,14 @@ p {
 }
 
 .contacts {
+  display: flex;
+}
+
+.left-section {
   background-color: #404040;
-  flex-wrap: wrap;
   color: white;
-  list-style: none;
-  width: fit-content;
-  gap: 20px;
   text-align: left;
+  font-family: sans-serif;
+  font-size: 15px;
+  width: fit-content;
 }
