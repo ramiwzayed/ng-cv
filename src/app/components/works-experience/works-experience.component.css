@@ -4,10 +4,8 @@
   text-align: left;
   flex-wrap: wrap;
   width: fit-content;
+  
 }
 
-.right-section {
-  float: right;
-  width: 75%;
-}
+
 
