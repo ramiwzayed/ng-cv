@@ -1,5 +1,5 @@
 header {
-  margin-top: 100px;
+  /*margin-top: 100px;*/
   background-color: yellow;
   text-align: left;
   font-size: 20px;
@@ -8,7 +8,7 @@ header {
   gap: 10px;
   width: 2000px;
   height: 150px;
-  margin: 20px;
+  /*margin: 20px;*/
 }
 
 h1 {
@@ -26,16 +26,11 @@ h2, h3 {
   background-color: white;
 }
 
-.contacts {
-  background-color: #404040;
-  color: white;
-  list-style: none;
-  width: fit-content;
-}
 
 ul {
   color: black;
   width: fit-content;
+  list-style: none;
 }
 
 p {
@@ -43,26 +38,19 @@ p {
   margin: 0;
 }
 
-
-/*.two-colored-line {*/
-/*  width: 50%;*/
-/*  background-color: red;*/
-
-/*}*/
-
-
 .right-section {
   float: right;
   width: 75%;
+  background-color: white;
+  color: black;
 }
 
-
-.left-section {
-  float: left;
-  width: fit-content(250px);
+.contacts {
   background-color: #404040;
-}
-
-p {
-  margin: 10px;
+  flex-wrap: wrap;
+  color: white;
+  list-style: none;
+  width: fit-content;
+  gap: 20px;
+  text-align: left;
 }

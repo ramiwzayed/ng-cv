@@ -1,71 +1,56 @@
-<div class="left-section">
-  <img alt="Profile" height="248" ngSrc="assets/ima.PNG" width="202">
-  <ul class="contacts">
-
+<div class="contacts">
+  <div class="left-section">
+    <img alt="Profile" height="248" ngSrc="assets/ima.PNG" width="202">
     <h1>EDUCATION</h1>
     <hr color="yellow">
-    <p>ENTER YOUR MAJOR</p>
-    <p>Name of your university</p>
-    <p>2005-2009</p>
-    <p>ENTER YOUR MAJOR</p>
-    <p>Name of your university</p>
-    <p>2005-2009</p>
-
-
+    @for (info of allInfo; track info) {
+      <app-information [informationType]="info"
+                       style="width: 100%"></app-information>
+    }
     <h1>REFERENCE</h1>
     <hr color="yellow">
-
-    <div class="yellow-square"></div>
-    <li><p>Phone:</p>+972597876633</li>
-    <p>Email:</p> ur email
-    <li><p>website:</p>urwebsite.com</li>
-    <li><p>address:</p> Ramallah/PS</li>
-  </ul>
-</div>
-<div class="right-section">
-  <header style="margin-top: 100px">
-    <p><b>K</b>aren RICHARDS</p>
-    <p>PROFESSIONAL TITLE</p>
-  </header>
-  <h2>About me</h2>
-  <hr>
-  <p>Lorem Ipsum dolor sit amet , consectetur adipiscing elit,sed do euusmod empor incididunt ut labore et dolore magna
-    alique.</p>
-  <h2>Work Experience</h2>
-  <hr>
-  <ul>
-    <li>
-      <p class="work">2012-2014</p>
-      <p><strong>Job Postion here</strong></p>
-      <p><strong>Company/Name/California USA</strong></p>
-      <p>lorem Ipsum dolor sit amet , consectetur adipiscing elit,sed do euusmod empor incididunt ut labore et dolore
-        magna</p>
-    </li>
-    <li>
-      <p class="work">2014-2017</p>
-      <p><strong>Job Postion here</strong></p>
-      <p><strong>Company/Name/California USA</strong></p>
-      <p>lorem Ipsum dolor sit amet , consectetur adipiscing elit,sed do euusmod empor incididunt ut labore et dolore
-        magna</p></li>
-    <li><p class="work">2017-Present</p>
-      <p><strong>Job Postion here</strong></p>
-      <p><strong>Company/Name/California USA</strong></p>
-      <p>lorem Ipsum dolor sit amet , consectetur adipiscing elit,sed do euusmod empor incididunt ut labore et dolore
-        magna</p>
-    </li>
-  </ul>
-  <!--<h2>Work Experience</h2>-->
-  <!--<hr>-->
-  <!--  <div style="display: flex">-->
-  <!--    @for(work of allWorks; track work){-->
-  <!--      <app-works [work]="work"></app-works>-->
-  <!--    }-->
-  <!--  </div>-->
-  <h3>Software Skill</h3>
-  <hr>
-  <div style="display: flex">
-    @for (skill of allSkills; track skill) {
-      <app-skill [skill]="skill"
-                 style="width: 100%"></app-skill>
-    }
+    <p>Sara Taylore</p>
+    <p>Director Company Name</p>
+    <p>Telephone: +012345678651</p>
+    <hr>
+    <div class="extraInfo">
+      <p>Phone</p>
+      <p>+059781625312</p>
+      <p>Email</p>
+      <p>urnamegmail</p>
+      <p>website</p>
+      <p>urWebsite</p>
+      <p>Address</p>
+      <p>urAddress</p>
+    </div>
   </div>
+  <div class="right-section">
+    <header style="margin-top: 100px">
+      <p><strong>K</strong>aren RICHARDS</p>
+      <p>PROFESSIONAL TITLE</p>
+    </header>
+    <h2>About me</h2>
+    <hr>
+    <p>{{ aboutMeText }}</p>
+
+    <h2>Work Experience</h2>
+    <hr>
+    <div style="display: flex; flex-wrap: wrap ">
+      @for (workExperience of allWorks; track workExperience) {
+        <app-works-experience [workExperience]="workExperience"
+                              style="width: 100%"></app-works-experience>
+      }
+    </div>
+
+    <h3>Software Skill</h3>
+
+    <hr>
+
+    <div style="display: flex; flex-wrap: wrap">
+      @for (skill of allSkills; track skill) {
+        <app-skill [skill]="skill"
+                   style="width: 50%"></app-skill>
+      }
+    </div>
+  </div>
+</div>
